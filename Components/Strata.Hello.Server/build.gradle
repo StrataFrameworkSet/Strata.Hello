@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+sourceSets {
+    main.java.srcDirs = ['main/java']
+    test.java.srcDirs = ['unused']
+}
+
+group 'strata.hello'
+version "$major$minor$patch"
+
+dependencies {
+    api project(':Components:Strata.Hello.Service')
+    api "strata.server:strata-server-spring:$version"
+}

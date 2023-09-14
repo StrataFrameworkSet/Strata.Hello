@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+sourceSets {
+    test.java.srcDirs = ['test/java']
+    test.resources.srcDirs = ['test/resources']
+    main.java.srcDirs = ['unused']
+}
+
+group = 'strata.hello'
+version = '1.0-SNAPSHOT'
+
+dependencies {
+    testImplementation project(':Components:Strata.Hello.Client')
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.jboss.resteasy:resteasy-client:6.2.5.Final'
+    testImplementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    implementation 'org.springframework:spring-core:6.0.11'
+}
+
+test {
+    useJUnitPlatform {
+        includeTags = ["CommitStage","IntegrationStage"]
+    }}

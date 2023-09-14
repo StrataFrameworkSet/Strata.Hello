@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'com.google.cloud.tools.jib' version '3.3.1'
+}
+
+sourceSets {
+    main.java.srcDirs = ['main/java']
+    main.resources.srcDirs = ['main/resources']
+    test.java.srcDirs = ['unused']
+}
+
+group 'strata.hello'
+version "$major$minor$patch"
+
+dependencies {
+    implementation project(':Components:Strata.Hello.Server')
+    implementation "org.springframework.boot:spring-boot-starter-web:$springboot_version"
+    implementation "org.springframework.boot:spring-boot-starter-webflux:$springboot_version"
+    implementation "org.springframework.boot:spring-boot-autoconfigure:$springboot_version"
+}
+
+jib {
+    from {
+        image = "amazoncorretto:17.0.7-alpine"
+        auth {
+            username = "$System.env.REPOSITORY_USER"
+            password = "$System.env.REPOSITORY_PASSWORD"
+        }
+    }
+    to {
+        image = "ghcr.io/strataframeworkset/hello-service-host"
+        tags = ['0.0.0']
+        auth {
+            username = "$System.env.REPOSITORY_USER"
+            password = "$System.env.REPOSITORY_PASSWORD"
+        }
+    }
+    container {
+        environment = [DEPLOY_ENV:"docker-development"]
+        jvmFlags = ["-Xmx1024m"]
+        extraClasspath = ["build/libs/Strata.Hello.ServiceHost-1.0-SNAPSHOT.jar"]
+        mainClass = "strata.hello.servicehost.HelloServiceHost"
+        ports = ['8080']
+        format = 'OCI'
+    }
+}
