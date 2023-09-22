@@ -4,8 +4,8 @@ import {AbstractServiceRequest}
 export class SayHelloRequest
     extends AbstractServiceRequest
 {
-    private user: String;
-    private greeting: String;
+    private user: string;
+    private greeting: string;
 
     constructor()
     {
@@ -14,24 +14,24 @@ export class SayHelloRequest
         this.greeting = null;
     }
 
-    setUser(user:String): SayHelloRequest
+    setUser(user:string): SayHelloRequest
     {
         this.user = user;
         return this;
     }
 
-    setGreeting(greeting:String): SayHelloRequest
+    setGreeting(greeting:string): SayHelloRequest
     {
         this.greeting = greeting;
         return this;
     }
 
-    getUser(): String
+    getUser(): string
     {
         return this.user;
     }
 
-    getGreeting(): String
+    getGreeting(): string
     {
         return this.greeting;
     }

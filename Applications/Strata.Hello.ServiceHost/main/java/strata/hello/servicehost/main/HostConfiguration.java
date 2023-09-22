@@ -17,10 +17,14 @@ import strata.foundation.spring.mapper.StrataObjectMapperProvider;
 import strata.hello.server.application.ApplicationModule;
 import strata.hello.server.platform.PlatformModule;
 import strata.server.spring.inject.RequestScope;
+import strata.server.spring.service.ServiceConfiguration;
 
 @Configuration
 @EnableGuiceModules
-@Import({SpringDocConfigProperties.class,StrataModelResolver.class})
+@Import({
+    ServiceConfiguration.class,
+    SpringDocConfigProperties.class,
+    StrataModelResolver.class})
 public
 class HostConfiguration
 {

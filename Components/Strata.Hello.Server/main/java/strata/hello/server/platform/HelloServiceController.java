@@ -16,7 +16,7 @@ import strata.hello.service.requestreply.SayHelloRequest;
 import java.util.concurrent.CompletionStage;
 
 @RestController
-@CrossOrigin(origins = "https://localhost:8080")
+@CrossOrigin(origins = "*")
 @RequestMapping("/hello-service")
 public
 class HelloServiceController
@@ -41,7 +41,7 @@ class HelloServiceController
     }
 
     @PostMapping(value = "/say-hello-sync", produces = MediaType.APPLICATION_JSON_VALUE)
-    public SayHelloReply
+    public @ResponseBody SayHelloReply
     sayHelloSync(@RequestBody SayHelloRequest request)
     {
         logger.info("delegating sayHelloSync to implementation service");
@@ -49,7 +49,7 @@ class HelloServiceController
     }
 
     @PostMapping(value = "/say-hello-async",produces = MediaType.APPLICATION_JSON_VALUE)
-    public CompletionStage<SayHelloReply>
+    public @ResponseBody CompletionStage<SayHelloReply>
     sayHelloAsync(@RequestBody SayHelloRequest request)
     {
         logger.info("delegating sayHelloAsync to implementation service");

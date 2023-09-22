@@ -37,32 +37,29 @@ class HelloService
         logger.info("request.user = " + request.getUser());
         logger.info("request.greeting = " + request.getGreeting());
 
-        if (request.getGreeting() != null && !request.getGreeting().isEmpty())
+        try
+        {
+            validate(request);
             return
-                (SayHelloReply)
-                    new SayHelloReply(request)
-                        .setGreeting(
-                            request.getGreeting() + " " +
-                                request.getUser())
-                        .setSuccess(true);
-
-        return
-            (SayHelloReply)
+                new SayHelloReply(request)
+                    .setGreeting(
+                        request.getGreeting() + " " +
+                            request.getUser())
+                    .setSuccess(true);
+        }
+        catch (ValidationException exception)
+        {
+            return
                 new SayHelloReply(request)
                     .setSuccess(false)
-                    .setFailureMessage("no greeting provided")
+                    .setFailureMessage(exception.getMessage())
                     .setException(
                         new ExceptionData()
-                            .setExceptionType(
-                                IllegalStateException.class.getCanonicalName())
+                            .setExceptionType(exception.getClass().getCanonicalName())
                             .setExceptionCode(-1)
-                            .setExceptionMessage("no greeting provided")
-                            .setCause(
-                                new ExceptionData()
-                                    .setExceptionType(
-                                        NoSuchElementException.class.getCanonicalName())
-                                    .setExceptionCode(-2)
-                                    .setExceptionMessage("no such field: greeting")));
+                            .setExceptionMessage(exception.getMessage()));
+
+        }
     }
 
     @Override
@@ -74,26 +71,44 @@ class HelloService
         logger.info("request.user = " + request.getUser());
         logger.info("request.greeting = " + request.getGreeting());
 
-        if (request.getGreeting() != null && !request.getGreeting().isEmpty())
+        try
+        {
+            validate(request);
             return
-                CompletableFuture
-                    .supplyAsync(
-                        () ->
-                            (SayHelloReply)
-                                new SayHelloReply(request)
-                                    .setGreeting(
-                                        request.getGreeting() + " " +
-                                            request.getUser())
-                                    .setSuccess(true));
-
-        return
-            CompletableFuture
-                .supplyAsync(
+                CompletableFuture.supplyAsync(
                     () ->
-                        (SayHelloReply)
-                            new SayHelloReply(request)
-                                .setSuccess(false)
-                                .setFailureMessage("No greeting provided"));
+                        new SayHelloReply(request)
+                            .setGreeting(
+                                request.getGreeting() + " " +
+                                    request.getUser())
+                            .setSuccess(true));
+        }
+        catch (ValidationException exception)
+        {
+            return
+                CompletableFuture.supplyAsync(
+                    () ->
+                        new SayHelloReply(request)
+                            .setSuccess(false)
+                            .setFailureMessage(exception.getMessage())
+                            .setException(
+                                new ExceptionData()
+                                    .setExceptionType(exception.getClass().getCanonicalName())
+                                    .setExceptionCode(-1)
+                                    .setExceptionMessage(exception.getMessage())));
+
+        }
+    }
+
+    protected void
+    validate(SayHelloRequest request)
+        throws ValidationException
+    {
+        if (request.getUser() == null)
+            throw new ValidationException("request.user must be non-null");
+
+        if (request.getGreeting() == null)
+            throw new ValidationException("request.greeting must be non-null");
 
     }
 }

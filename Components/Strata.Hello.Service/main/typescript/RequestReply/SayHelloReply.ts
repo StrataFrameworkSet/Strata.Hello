@@ -3,7 +3,7 @@ import {AbstractServiceReply} from "strata.foundation.core/Transfer/AbstractServ
 export class SayHelloReply
     extends AbstractServiceReply
 {
-    private greeting: String;
+    private greeting: string;
 
     constructor()
     {
@@ -11,13 +11,13 @@ export class SayHelloReply
         this.greeting = null;
     }
 
-    setGreeting(greeting:String): SayHelloReply
+    setGreeting(greeting:string): SayHelloReply
     {
         this.greeting = greeting;
         return this;
     }
 
-    getGreeting(): String
+    getGreeting(): string
     {
         return this.greeting;
     }
