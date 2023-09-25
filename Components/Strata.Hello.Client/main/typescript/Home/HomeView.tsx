@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Component} from 'react';
-import {Card, H1} from '@blueprintjs/core';
 import Element = React.JSX.Element;
+import {Container, Typography } from '@mui/material';
 
 export
 class HomeView
@@ -10,9 +10,9 @@ class HomeView
     render(): Element
     {
         return (
-            <Card>
-                <h1>Home View</h1>
-            </Card>
+            <Container maxWidth={false} disableGutters={true}>
+                <Typography variant={'h3'}>Home View</Typography>
+            </Container>
         );
     }
 }

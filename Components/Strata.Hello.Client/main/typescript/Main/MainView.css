@@ -1,4 +1,3 @@
-@import "~@blueprintjs/core/lib/css/blueprint.css";
 
 .MainView {
     text-align: center;
@@ -16,6 +15,8 @@ div.app-name {
 
 a.nav-menu {
     margin-right: 10px;
+    color: #90caf9 !important;
+    text-decoration: none;
 }
 
 a.menu-selected {
@@ -45,6 +46,7 @@ button.menu-selected:hover {
 
 .app-container {
     height: 100%;
+    width: 95%;
 }
 
 .main-footer {

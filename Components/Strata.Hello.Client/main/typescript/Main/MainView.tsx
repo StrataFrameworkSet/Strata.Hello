@@ -8,6 +8,7 @@ import {MainNavigationMenuBar} from "./MainNavigationMenuBar";
 import {IHelloWorldPresenter} from "../Hello/IHelloWorldPresenter";
 import "./MainView.css";
 import Element = React.JSX.Element;
+import {Box, Container,createTheme,CssBaseline,Theme,ThemeProvider} from "@mui/material";
 
 
 export 
@@ -27,13 +28,22 @@ class MainView
                 .props
                 .presenter
                 .getHelloWorldPresenter();
+        const darkTheme: Theme = createTheme({
+            palette: {
+                mode: 'dark',
+            },
+        });
 
         return (
-            <div className="app-container bp5-dark">
-                <MainNavigationMenuBar heading="HelloWorld"/>
-                <RouteSet helloWorldPresenter={presenter}/>
-                <footer className="main-footer"></footer>
-            </div>);
+            <ThemeProvider theme={darkTheme}>
+                <Container maxWidth={false} disableGutters={true}>
+                    <CssBaseline/>
+                    <MainNavigationMenuBar heading="HelloWorld"/>
+                    <Box margin={2}>
+                        <RouteSet helloWorldPresenter={presenter}/>
+                    </Box>
+                </Container>
+            </ThemeProvider>);
     }
 
     protected getSelf(): IMainView

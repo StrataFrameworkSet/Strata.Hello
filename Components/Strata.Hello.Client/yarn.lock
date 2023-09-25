@@ -1165,13 +1165,13 @@
   dependencies:
     tslib "~2.5.0"
 
-"@blueprintjs/core@^5.2.1", "@blueprintjs/core@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.npmjs.org/@blueprintjs/core/-/core-5.3.0.tgz#5e4d00797c684f6e417e3d1707ac2141f67f70a0"
-  integrity sha512-Pzd/ptszeX/Vt5rMa7AFSRlxw8sMs2xhCs4Xje2tTsQUaElbmH1oJbzDyAjSs50na6ncKEmPIvkhXz5ggB1rrA==
+"@blueprintjs/core@^5.2.1", "@blueprintjs/core@^5.3.0", "@blueprintjs/core@^5.3.1":
+  version "5.3.1"
+  resolved "https://registry.npmjs.org/@blueprintjs/core/-/core-5.3.1.tgz#bd367193a09365121215f0dc0b28a668c5c74eb1"
+  integrity sha512-g40V66ygyXIYP6KfNaWTHHsNwsVxab/mmjy3vATgTlqnCOqJNkpa0WXuwm52GNjZ5zRrZE6z9GbIm16LstvzIA==
   dependencies:
     "@blueprintjs/colors" "^5.0.2"
-    "@blueprintjs/icons" "^5.1.6"
+    "@blueprintjs/icons" "^5.1.7"
     "@popperjs/core" "^2.11.7"
     classnames "^2.3.1"
     normalize.css "^8.0.1"
@@ -1180,16 +1180,16 @@
     tslib "~2.5.0"
 
 "@blueprintjs/datetime@^5.0.9":
-  version "5.0.10"
-  resolved "https://registry.npmjs.org/@blueprintjs/datetime/-/datetime-5.0.10.tgz#b52cad436672f2b7985abde6475961abb8f2c17e"
-  integrity sha512-QPl7AjGtlW+U8wh55/F6ItNDY77h+k2y5B5ivalrC8Jx7eUlnuffE9ds4hQ4gjwIvQcgFAaAozgPP/vvjlEZqQ==
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/@blueprintjs/datetime/-/datetime-5.1.0.tgz#5d833c3c64705300fd484d3263dc2a36e6abf745"
+  integrity sha512-luErmdr2Rz+gCacffxPITF8dJ5r68yx7v6ytnRocIFZeb965vdJJNCDVcmfAcGQWG6dWJ1hDboLBP4SFKSwKHg==
   dependencies:
-    "@blueprintjs/core" "^5.3.0"
-    "@blueprintjs/icons" "^5.1.6"
-    "@blueprintjs/select" "^5.0.10"
+    "@blueprintjs/core" "^5.3.1"
+    "@blueprintjs/icons" "^5.1.7"
+    "@blueprintjs/select" "^5.0.11"
     classnames "^2.3.1"
     date-fns "^2.28.0"
-    date-fns-tz "^1.3.7"
+    date-fns-tz "^2.0.0"
     lodash "^4.17.21"
     react-day-picker "7.4.9"
     tslib "~2.5.0"
@@ -1207,31 +1207,31 @@
     fuzzaldrin-plus "^0.6.0"
     tslib "~2.5.0"
 
-"@blueprintjs/icons@^5.1.5", "@blueprintjs/icons@^5.1.6":
-  version "5.1.6"
-  resolved "https://registry.npmjs.org/@blueprintjs/icons/-/icons-5.1.6.tgz#3882cd3a01a1f83dbe584851955a7459d0a78704"
-  integrity sha512-W87oUP082sZ+dh5oxbgARCHGDyELVKXC+ffxkMYeK3M3hDn0UBSCUZgWZMLltf0qGfFRXlkY+Vn3G08at6xXSw==
+"@blueprintjs/icons@^5.1.5", "@blueprintjs/icons@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.npmjs.org/@blueprintjs/icons/-/icons-5.1.7.tgz#368f0e17cfec14c1abe9cbc314e85ced2ddf7c6c"
+  integrity sha512-gokx0MGi++U9l8z0ZvhAzMWbgMXlXCL4iVVcrQkkS6kY8Ta72FQ9rEibdCSdlPqW0TwoJcNq62iXxaJ9H8UVVQ==
   dependencies:
     change-case "^4.1.2"
     classnames "^2.3.1"
     tslib "~2.5.0"
 
-"@blueprintjs/select@^5.0.10", "@blueprintjs/select@^5.0.9":
-  version "5.0.10"
-  resolved "https://registry.npmjs.org/@blueprintjs/select/-/select-5.0.10.tgz#a926e352d23b06ee064559cc24e64296e02d1d2b"
-  integrity sha512-LQhbk+sexGBgZBKj529K81oPcXR0pTe/LMIVPLl36cruacVvGeuoLczn187s+GdsTCs+ldb8osmnoYyCIXPZTw==
+"@blueprintjs/select@^5.0.10", "@blueprintjs/select@^5.0.11", "@blueprintjs/select@^5.0.9":
+  version "5.0.11"
+  resolved "https://registry.npmjs.org/@blueprintjs/select/-/select-5.0.11.tgz#5347856cd8f13a746948e8530f12df6d49f23f8d"
+  integrity sha512-ECSGWVoM7Ny7EHhRFw7cTFEHmWwPpiIxoVMArHzFg5X3J2llX1xBcNWwHLb4cagE/GQ0/+FI0tYQ71//xuUYjA==
   dependencies:
-    "@blueprintjs/core" "^5.3.0"
-    "@blueprintjs/icons" "^5.1.6"
+    "@blueprintjs/core" "^5.3.1"
+    "@blueprintjs/icons" "^5.1.7"
     classnames "^2.3.1"
     tslib "~2.5.0"
 
 "@blueprintjs/table@^5.0.9":
-  version "5.0.10"
-  resolved "https://registry.npmjs.org/@blueprintjs/table/-/table-5.0.10.tgz#121a215560c7651e70f47cf35361cbc549a793d1"
-  integrity sha512-95Bc2w2hUcE889y4YNVp4z8FnWXTdo7Rx525UtWMMBb4Oja/KjIpv+duZE0botC4DStcTSQq366rY6/pe1chzw==
+  version "5.0.11"
+  resolved "https://registry.npmjs.org/@blueprintjs/table/-/table-5.0.11.tgz#7ff651d9fc51ba7aae20826e9c1f5ccc7a405b56"
+  integrity sha512-ZajJM0+GvMiUITA6dOqnQ8OzjSkDdy3BvfXFCWobhURJfKPskhtZJ0iH/DAOO8cazpB3qPTLxccxTe3VAjvv0Q==
   dependencies:
-    "@blueprintjs/core" "^5.3.0"
+    "@blueprintjs/core" "^5.3.1"
     classnames "^2.3.1"
     react-innertext "^1.1.5"
     tslib "~2.5.0"
@@ -1831,7 +1831,14 @@
   resolved "https://registry.npmjs.org/@mui/core-downloads-tracker/-/core-downloads-tracker-5.14.10.tgz#32a8581be98344bbda5ed31fc7b41788bd2e3bc5"
   integrity sha512-kPHu/NhZq1k+vSZR5wq3AyUfD4bnfWAeuKpps0+8PS7ZHQ2Lyv1cXJh+PlFdCIOa0PK98rk3JPwMzS8BMhdHwQ==
 
-"@mui/material@^5.14.9":
+"@mui/icons-material@^5.14.9":
+  version "5.14.9"
+  resolved "https://registry.npmjs.org/@mui/icons-material/-/icons-material-5.14.9.tgz#433cf03c214ce38e1b7a6f684769491fd99c5ef5"
+  integrity sha512-xTRQbDsogsJo7tY5Og8R9zbuG2q+KIPVIM6JQoKxtJlz9DPOw1u0T2fGrvwD+XAOVifQf6epNMcGCDLfJAz4Nw==
+  dependencies:
+    "@babel/runtime" "^7.22.15"
+
+"@mui/material@^5.14.10", "@mui/material@^5.14.9":
   version "5.14.10"
   resolved "https://registry.npmjs.org/@mui/material/-/material-5.14.10.tgz#b8c6ba17c25c0df54053cb0f1bb35083bc91dace"
   integrity sha512-ejFMppnO+lzBXpzju+N4SSz0Mhmi5sihXUGcr5FxpgB6bfUP0Lpe32O0Sw/3s8xlmLEvG1fqVT0rRyAVMlCA+A==
@@ -2321,15 +2328,10 @@
   resolved "https://registry.npmjs.org/@types/prettier/-/prettier-2.7.3.tgz#3e51a17e291d01d17d3fc61422015a933af7a08f"
   integrity sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==
 
-"@types/prop-types@*":
-  version "15.7.5"
-  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
-  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
-
-"@types/prop-types@^15.7.5":
-  version "15.7.6"
-  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.6.tgz#bbf819813d6be21011b8f5801058498bec555572"
-  integrity sha512-RK/kBbYOQQHLYj9Z95eh7S6t7gq4Ojt/NT8HTk8bWVhA5DaF+5SMnxHKkP4gPNN3wAZkKP+VjAf0ebtYzf+fxg==
+"@types/prop-types@*", "@types/prop-types@^15.7.5":
+  version "15.7.7"
+  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.7.tgz#f9361f7b87fd5d8188b2c998db0a1f47e9fb391a"
+  integrity sha512-FbtmBWCcSa2J4zL781Zf1p5YUBXQomPEcep9QZCfRfQgTxz3pJWiDFLebohZ9fFntX5ibzOkSsrJ0TEew8cAog==
 
 "@types/q@^1.5.1":
   version "1.5.6"
@@ -2378,9 +2380,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18.2.21":
-  version "18.2.21"
-  resolved "https://registry.npmjs.org/@types/react/-/react-18.2.21.tgz#774c37fd01b522d0b91aed04811b58e4e0514ed9"
-  integrity sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==
+  version "18.2.22"
+  resolved "https://registry.npmjs.org/@types/react/-/react-18.2.22.tgz#abe778a1c95a07fa70df40a52d7300a40b949ccb"
+  integrity sha512-60fLTOLqzarLED2O3UQImc/lsNRgG0jE/a1mPW9KjMemY0LMITWEsbS4VvZ4p6rorEHd5YKxxmMKSDK505GHpA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -3918,10 +3920,10 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-date-fns-tz@^1.3.7:
-  version "1.3.8"
-  resolved "https://registry.npmjs.org/date-fns-tz/-/date-fns-tz-1.3.8.tgz#083e3a4e1f19b7857fa0c18deea6c2bc46ded7b9"
-  integrity sha512-qwNXUFtMHTTU6CFSFjoJ80W8Fzzp24LntbjFFBgL/faqds4e5mo9mftoRLgr3Vi1trISsg4awSpYVsOQCRnapQ==
+date-fns-tz@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/date-fns-tz/-/date-fns-tz-2.0.0.tgz#1b14c386cb8bc16fc56fe333d4fc34ae1d1099d5"
+  integrity sha512-OAtcLdB9vxSXTWHdT8b398ARImVwQMyjfYGkKD2zaGpHseG2UPHbHjXELReErZFxWdSLph3c2zOaaTyHfOhERQ==
 
 date-fns@^2.28.0:
   version "2.30.0"
@@ -8847,6 +8849,27 @@ statuses@2.0.1:
   resolved "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
 
+strata.client.blueprint@^0.0.0-snapshot.2:
+  version "0.0.0-snapshot.2"
+  resolved "https://registry.npmjs.org/strata.client.blueprint/-/strata.client.blueprint-0.0.0-snapshot.2.tgz#8f85e8a483b99a7258190072a7a61ff9d40d4aac"
+  integrity sha512-WhnV1aO+wOsR3EZWsitCFNORp5+3EocIRuXUhlSYXg+dd+5vt9SuayGKvr/NXFkTDUkigDIJRPkbXZLrJtdCEQ==
+  dependencies:
+    "@blueprintjs/core" "^5.2.1"
+    "@blueprintjs/datetime" "^5.0.9"
+    "@blueprintjs/icons" "^5.1.5"
+    "@blueprintjs/select" "^5.0.9"
+    "@blueprintjs/table" "^5.0.9"
+    "@types/react" "^18.2.21"
+    "@types/react-dom" "^18.2.7"
+    "@types/react-router" "^5.1.20"
+    "@types/react-router-dom" "^5.3.3"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    react-router-dom "^5.3.4"
+    rxjs "^6.5.5"
+    strata.client.core "^0.0.0-snapshot.2"
+    strata.client.react "^0.0.0-snapshot.5"
+
 strata.client.core@^0.0.0-snapshot.2:
   version "0.0.0-snapshot.10"
   resolved "https://registry.npmjs.org/strata.client.core/-/strata.client.core-0.0.0-snapshot.10.tgz#1e4a10ad716e243a9674391120aea6be46169054"
@@ -8856,10 +8879,10 @@ strata.client.core@^0.0.0-snapshot.2:
     rxjs "^6.5.5"
     strata.foundation.core "^0.0.0-snapshot.18"
 
-strata.client.mui@^0.0.0-snapshot.1:
-  version "0.0.0-snapshot.1"
-  resolved "https://registry.npmjs.org/strata.client.mui/-/strata.client.mui-0.0.0-snapshot.1.tgz#e15e46aef706300a660f2dc5911375700198055f"
-  integrity sha512-ieRMq0lEqLfw+lm3mw8PYHkZp+LCju3hdeLq6d8Up16sJmpMZCn3EDizNKVYnAKua8wpKXCLz3GPRMDmHcccUA==
+strata.client.mui@^0.0.0-snapshot.2:
+  version "0.0.0-snapshot.8"
+  resolved "https://registry.npmjs.org/strata.client.mui/-/strata.client.mui-0.0.0-snapshot.8.tgz#3966e5368dfc41851aea3535b0e9dc8a267d5621"
+  integrity sha512-4j7PIu+DRr0SC96z7sDAABSLe+9V5O8uWDU7fPgnoPDEiTC/xHxpyJHG7725K2Ao7scoaE58xwrPDSrAv2akcg==
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
@@ -8874,16 +8897,11 @@ strata.client.mui@^0.0.0-snapshot.1:
     react-router-dom "^5.3.4"
     strata.client.core "^0.0.0-snapshot.2"
 
-strata.client.react@^0.0.0-snapshot.3:
-  version "0.0.0-snapshot.4"
-  resolved "https://registry.npmjs.org/strata.client.react/-/strata.client.react-0.0.0-snapshot.4.tgz#c19bcd17ab297f73580de46e8d78101854a6c4c6"
-  integrity sha512-6DlHmFMwvmtNqzFXkwVXQ3E5dmYwjbkWIbcUdRY5HaKWQtbybb65lAAhdKanSFzm45h4vqj1KpKzknyGMUAv2A==
+strata.client.react@^0.0.0-snapshot.3, strata.client.react@^0.0.0-snapshot.5:
+  version "0.0.0-snapshot.7"
+  resolved "https://registry.npmjs.org/strata.client.react/-/strata.client.react-0.0.0-snapshot.7.tgz#ce8df7d076a0e27bea98626014dcef263cc94d0a"
+  integrity sha512-Ki+ZErm+5nOE6jrSEtwpbaMuXou8s7y90vzTI6bxWC6/R1xXakbcTdC99ezzJg9Ergiun8D6RfUroy1sFN2AIg==
   dependencies:
-    "@blueprintjs/core" "^5.2.1"
-    "@blueprintjs/datetime" "^5.0.9"
-    "@blueprintjs/icons" "^5.1.5"
-    "@blueprintjs/select" "^5.0.9"
-    "@blueprintjs/table" "^5.0.9"
     "@types/react" "^18.2.21"
     "@types/react-dom" "^18.2.7"
     "@types/react-router" "^5.1.20"
