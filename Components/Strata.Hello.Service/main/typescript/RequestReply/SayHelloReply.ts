@@ -1,24 +1,9 @@
-import {AbstractServiceReply} from "strata.foundation.core/Transfer/AbstractServiceReply";
+import {AbstractServiceReply} from "strata.foundation.core/Transfer";
 
-export class SayHelloReply
+export
+interface SayHelloReply
     extends AbstractServiceReply
 {
-    private greeting: string;
+    greeting: string;
 
-    constructor()
-    {
-        super();
-        this.greeting = null;
-    }
-
-    setGreeting(greeting:string): SayHelloReply
-    {
-        this.greeting = greeting;
-        return this;
-    }
-
-    getGreeting(): string
-    {
-        return this.greeting;
-    }
 }

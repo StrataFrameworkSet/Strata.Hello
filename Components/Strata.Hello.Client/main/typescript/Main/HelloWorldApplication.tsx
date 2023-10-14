@@ -10,6 +10,7 @@ import {IMainModel} from "./IMainModel";
 import {IMainPresenter} from "./IMainPresenter";
 import {IMainView} from "./IMainView";
 import {MainPresenter} from "./MainPresenter";
+import Element = React.JSX.Element;
 
 export
 class HelloWorldApplication
@@ -30,7 +31,7 @@ class HelloWorldApplication
 
     }
 
-    protected getMainView(): any
+    protected getMainView(): Element
     {
         return (<MainView presenter={this.getPresenter()}/>);
     }

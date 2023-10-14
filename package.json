@@ -6,7 +6,7 @@
         "clean": "yarn run clean-components",
         "build-components": "cd Components/Strata.Hello.Client && yarn run publish-package",
         "build-applications": "cd Applications/Strata.Hello.WebHost && yarn run build",
-        "build": "yarn run clean && yarn run build-components && yarn run build-applications",
+        "build": "yarn run build-components && yarn run build-applications",
         "test": "yarn run build"
     }
 }

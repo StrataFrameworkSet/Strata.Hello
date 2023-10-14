@@ -22,18 +22,17 @@ class HelloServiceClient
         console.log("HelloServiceClient.sayHelloAsync");
         return this.doPost<SayHelloReply,SayHelloRequest>(
             "say-hello-async",
-            SayHelloReply,
             this.initializeRequest(request));
     }
 
     private initializeRequest(request: SayHelloRequest): SayHelloRequest
     {
         console.log("HelloServiceClient.initializeRequest");
-        if (request.getRequestId() == null)
-            request.setRequestId(Guid.create().toString());
+        if (request == null)
+            request.requestId = Guid.create().toString();
 
-        if (request.getTimestamp() == null)
-            request.setTimestamp(Instant.now());
+        if (request.timestamp == null)
+            request.timestamp = Instant.now().toString();
 
         return request;
     }

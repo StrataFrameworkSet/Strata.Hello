@@ -9,6 +9,7 @@ import {IHelloWorldPresenter} from "../Hello/IHelloWorldPresenter";
 import "./MainView.css";
 import Element = React.JSX.Element;
 import {Box, Container,createTheme,CssBaseline,Theme,ThemeProvider} from "@mui/material";
+import { MainIcon } from "./MainIcon";
 
 
 export 
@@ -38,7 +39,10 @@ class MainView
             <ThemeProvider theme={darkTheme}>
                 <Container maxWidth={false} disableGutters={true}>
                     <CssBaseline/>
-                    <MainNavigationMenuBar heading="HelloWorld"/>
+                    <MainNavigationMenuBar
+                        icon={<MainIcon/>}
+                        heading="HelloWorld"
+                        initialUserType={'Guest'}/>
                     <Box margin={2}>
                         <RouteSet helloWorldPresenter={presenter}/>
                     </Box>

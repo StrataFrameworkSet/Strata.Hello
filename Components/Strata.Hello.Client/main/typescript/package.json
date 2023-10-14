@@ -1,6 +1,6 @@
 {
     "name": "strata.hello.client",
-    "version": "0.0.0-snapshot.44",
+    "version": "0.0.0-snapshot.81",
     "license": "Apache-2.0",
     "scripts": {
         "increment-snapshot": "npm version prerelease",
@@ -9,21 +9,8 @@
         "increment-patch": "npm version patch"
     },
     "dependencies": {
-        "@emotion/react": "^11.11.1",
-        "@emotion/styled": "^11.11.0",
-        "@mui/material": "^5.14.10",
-        "@mui/icons-material": "^5.14.9",
-        "strata.client.blueprint": "^0.0.0-snapshot.2",
-        "strata.client.core": "^0.0.0-snapshot.2",
-        "strata.client.mui": "^0.0.0-snapshot.2",
-        "strata.client.react": "^0.0.0-snapshot.3",
-        "strata.hello.service": "^0.0.0-snapshot.6",
-        "@babel/preset-typescript": "^7.22.5",
-        "@babel/register": "^7.22.5",
-        "@blueprintjs/docs-theme": "^5.0.9",
-        "guid-typescript": "^1.0.9",
-        "react-scripts": "^5.0.1",
-        "rxjs": "^7.8.1",
+        "strata.client.mui": "^0.0.0-snapshot.43",
+        "strata.hello.service": "^0.0.0-snapshot.11",
         "web-vitals": "^2.1.4"
     }
 }

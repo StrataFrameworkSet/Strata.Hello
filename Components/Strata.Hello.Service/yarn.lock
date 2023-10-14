@@ -161,9 +161,9 @@ shx@^0.3.4:
     shelljs "^0.8.5"
 
 strata.foundation.core@^0.0.0-snapshot.18:
-  version "0.0.0-snapshot.20"
-  resolved "https://registry.npmjs.org/strata.foundation.core/-/strata.foundation.core-0.0.0-snapshot.20.tgz#c7bcd5054fadad23a5ed6a89628370554cca2779"
-  integrity sha512-IgwkfsD9b1eGVONykWPy8I63We755C8+ArvqjhDRMTLythapk8rfBLszDvnxob6tx8NbyMnfCbscJ3uZtF6VzQ==
+  version "0.0.0-snapshot.24"
+  resolved "https://registry.npmjs.org/strata.foundation.core/-/strata.foundation.core-0.0.0-snapshot.24.tgz#bbf8b38af310a4169f6759ca352601d89773ea5e"
+  integrity sha512-ml7cQoRyq14yjQECNyTe/DhW8hpZdi0sbi3Brc/a8Pypj/jFOPtREtgsR9M1eEcLgGqWYJt8KJUbyyYSnfuSWw==
   dependencies:
     "@js-joda/core" "^5.5.3"
     guid-typescript "^1.0.9"
